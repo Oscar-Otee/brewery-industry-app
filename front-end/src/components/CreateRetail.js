@@ -9,7 +9,7 @@ function CreateRetail({handleNewRetail}){
         console.log(retail)
         document.querySelector("#root > div > div > div:nth-child(2) > div:nth-child(1) > label > input[type=text]").value = ''
         
-        fetch("http://localhost:9295/retails",{
+        fetch("http://localhost:9292/retails",{
             method: "POST",
             headers:{
                 "content-type" : "application/json",

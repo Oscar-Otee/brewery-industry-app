@@ -8,14 +8,14 @@ function BreweryList({allRetails, allWholesales}){
     const [breweries, setBreweries] = useState([])
 
     useEffect(()=>{
-      fetch("http://localhost:9295/breweries")
+      fetch("http://localhost:9292/breweries")
       .then((r) => r.json())
       .then(breweries => setBreweries(breweries))
     },[])
 
     function deleteBrewery({id}){
         setBreweries(breweries.filter(brewery => brewery.id !== id))
-        fetch(`http://localhost:9295/breweries/${id}`,{
+        fetch(`http://localhost:9292/breweries/${id}`,{
             method: 'DELETE'
         })
             .then(resp => resp.json())

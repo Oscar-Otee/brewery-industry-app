@@ -19,7 +19,7 @@ function CreateBrewery({addBrewery, allRetails}){
         }
         e.target.reset()
 
-    fetch("http://localhost:9295/breweries",{
+    fetch("http://localhost:9292/breweries",{
         method: "POST",
         headers:{
             "content-type" : "application/json",

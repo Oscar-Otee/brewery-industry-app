@@ -14,7 +14,7 @@ function Home(){
     function deleteRetail({id}){
         setRetails(allRetails.filter(brewery => brewery.id !== id))
 
-        fetch(`http://localhost:9295/retails/${id}`,{
+        fetch(`http://localhost:9292/retails/${id}`,{
             method: 'DELETE'
         })
             .then(resp => resp.json())
@@ -22,7 +22,7 @@ function Home(){
     }
 
     useEffect(()=>{
-        fetch("http://localhost:9295/retails")
+        fetch("http://localhost:9292/retails")
         .then(resp => resp.json())
         .then(retails => setRetails(retails))
     },[])
