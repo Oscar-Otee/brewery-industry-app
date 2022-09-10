@@ -1,4 +1,4 @@
-import RetailsList from "./RetailList"
+import RetailsList from "./RetailsList"
 import React from 'react'
 import BreweryList from "./BreweryList"
 import { useState, useEffect } from "react"

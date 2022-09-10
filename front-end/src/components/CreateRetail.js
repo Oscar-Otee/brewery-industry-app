@@ -2,12 +2,12 @@ import React from 'react'
 
 
 function CreateRetail({handleNewRetail}){
-    function handleAddRetail(){
+    function handleAddRetail(e){
+        e.preventDefault()
         const retail = {
-            retail_name: document.querySelector("#root > div > div > div:nth-child(2) > div:nth-child(1) > label > input[type=text]").value
+            retail_name : e.target[0].value
         }
-        console.log(retail)
-        document.querySelector("#root > div > div > div:nth-child(2) > div:nth-child(1) > label > input[type=text]").value = ''
+        e.target.reset()
         
         fetch("http://localhost:9292/retails",{
             method: "POST",
@@ -25,10 +25,11 @@ function CreateRetail({handleNewRetail}){
     return(
         <div>
             <h1> Create A Retail</h1>
-            <label> Retail Name:
-                <input type="text" placeholder="Retail Name"></input>
-            </label>
-            <button onClick={handleAddRetail}>Add</button>
+            <form onSubmit={handleAddRetail}>
+            <label> Retail Name: </label>
+                <input type='text' name="retailName" placeholder='Retail Name'></input>
+                <input type='submit'></input>
+            </form>
         </div>
     )
 }
