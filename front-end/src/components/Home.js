@@ -28,6 +28,7 @@ function Home(){
     },[])
 
 
+
     return(
         <div>
           <RetailsList handleNewRetail={handleNewRetail} deleteRetail={deleteRetail} allRetails={allRetails}/>

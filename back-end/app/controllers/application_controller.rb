@@ -9,6 +9,11 @@ class ApplicationController < Sinatra::Base
         only: [
           :retail_name
         ]
+      },
+      wholesale: {
+        only: [
+          :wholesale_name
+        ]
       }
     }
   )
@@ -35,7 +40,7 @@ class ApplicationController < Sinatra::Base
    
     end
   
-    patch '/retails/:id' do
+    put '/retails/:id' do
       retail = Retail.find(params[:id])
       retail.update(
         name: params[:name],  
@@ -59,7 +64,7 @@ class ApplicationController < Sinatra::Base
    
     end
   
-    patch '/wholesales/:id' do
+    put '/wholesales/:id' do
       wholesale = Wholesale.find(params[:id])
       wholesale.update(
         name: params[:name],  
@@ -88,7 +93,7 @@ class ApplicationController < Sinatra::Base
         include_retail(breweries)
     end
   
-    patch '/breweries/:id' do 
+    put '/breweries/:id' do 
       brewery = Brewery.find(params[:id])
       brewery.update(
         name: params[:name], 
