@@ -1,4 +1,4 @@
-Brewery Industry
+Brewery Industry App
 Welcome to Brewery Industry, a program that brings to you all the breweries and their retails.
 
 The program will provide information about the details of the brewery such as name, brewer-type, street, city, state, postal-code, country, longitude, latitude and phone number of the Brewery. It also provides the details of the retailers in the industry
@@ -6,7 +6,7 @@ The program will provide information about the details of the brewery such as na
 The app uses 'https://api.openbrewerydb.org/breweries' as API for fetching breweries data before seeding them into the database.
 
 User Stories
-User can view all the information of the brewery such as name, brewer-type, street, city, state, postal-code, country, longitude, latitude and phone number of the Brewery.
+User can view all the information of the brewery such as name, brewer-type, street, city, state, postal-code, country, longitude, latitude and phone number of the Brewery along with its retailer and wholesaler.
 
 User can create a brewery and add the brewery to the list of other breweries
 User can delete the brewery from the list of breweries
