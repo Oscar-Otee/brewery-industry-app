@@ -1,4 +1,6 @@
 Brewery Industry App
+
+
 Welcome to Brewery Industry, a program that brings to you all the breweries and their retails.
 
 The program will provide information about the details of the brewery such as name, brewer-type, street, city, state, postal-code, country, longitude, latitude and phone number of the Brewery. It also provides the details of the retailers in the industry
