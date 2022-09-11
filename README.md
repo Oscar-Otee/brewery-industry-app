@@ -1,7 +1,7 @@
 Brewery Industry App
 
 
-Welcome to Brewery Industry App, a program that brings to you all the breweries together with their retailers and wholesalers.
+Welcome to Brewery Industry App, a program that brings to you all the breweries together with their retailers and wholesalers. It helps in randomly assigning retailers and wholesalers to the brewery.
 
 The program will provide information about the details of the brewery such as name, brewer-type, street, city, state, postal-code, country, longitude, latitude and phone number of the Brewery. It also provides the details of the retailers in the industry as well as wholesalers of the brewery.
 
