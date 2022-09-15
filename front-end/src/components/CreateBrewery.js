@@ -58,7 +58,7 @@ function CreateBrewery({addBrewery, allRetails}){
             <label> Retail Name: </label>
                 <select>
                     {allRetails.map((retail, index) => <option key={index}>{retail.retail_name}</option>)}   
-                </select>   
+                </select>    
             <input type='submit'></input>
           </form>
         </div>

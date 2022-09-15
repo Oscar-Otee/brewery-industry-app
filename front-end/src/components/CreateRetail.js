@@ -21,7 +21,6 @@ function CreateRetail({handleNewRetail}){
         .then(resp => handleNewRetail(resp))
     }
 
-    
     return(
         <div>
             <h1> Create A Retail</h1>

@@ -3,7 +3,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import CreateBrewery from './CreateBrewery.js'
 
-function BreweryList({allRetails}){
+function BreweryList({allRetails, allWholesales}){
     
     const [breweries, setBreweries] = useState([])
 
@@ -42,8 +42,7 @@ return(
             <p><strong>Longititude: </strong> {brewery.longitude}</p>
             <p><strong>Latitude: </strong> {brewery.latitude}</p>
             <p><strong>Phone: </strong> {brewery.phone}</p>
-            <p><strong>Retailer: </strong>{brewery.retail.retail_name}</p>
-            <p><strong>Wholesaler: </strong>{brewery.wholesale.wholesale_name}</p>
+            <p><strong>Retail: </strong>{brewery.retail.retail_name}</p>
             <button onClick={()=>deleteBrewery(brewery)}>Delete Brewery</button>
             <hr></hr>
          </div> 
